@@ -411,6 +411,10 @@ p .btnSearch{
     height: 100px;
     object-fit: cover;
 }
+.formAnnounce form{
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
+}
 /* ======================= Media Quires ================= */
 
 @media screen and ( max-width: 992px){
