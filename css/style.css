@@ -412,7 +412,7 @@ p .btnSearch{
     object-fit: cover;
 }
 .formAnnounce form{
-    background-color: white;
+    background-color: rgb(230, 224, 224);
     box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
 }
 /* ======================= Media Quires ================= */
