@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>عقار جديد</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" dir="rtl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="imageLogo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="search.html">عقارات جديدة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sell.html">مدونة</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                العربية
+              </a>
+              <ul class="dropdown-menu text-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"> Français </a></li>
+                <li><a class="dropdown-item" href="#"> English </a></li>
+                <li><a class="dropdown-item" href="#"> Español </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-user-circle fa-lg pl-2"></i> تسجيل الدخول
+              </a>
+            </li>
+            <li class="nav-item createBtn mt-1">
+              <a class="nav-link" href="#">إنشاء إعلان مجاني</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Section search -->
+  <div class="sellAqar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <p class="result fw-bold"></p>
+        </div>
+        <div class="col-md-8 col-sm-8 pt-4">
+          <nav class="breadcrumbCreate" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">القاهرة</li>
+              <li class="breadcrumb-item"><a href="#"> عقارات بمصر</a></li>
+            </ol>
+          </nav>
+          <h5 class="text-end pb-4">شقق للبيع في القاهرة(19545 نتائج)</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Result -->
+  <div class="resultSearch py-4">
+    <div class="container">
+      <!-- <div class="card mb-5" dir="rtl"> -->
+      <div class="row" dir="rtl">
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="card filter">
+            <div class="card-body">
+              <label for="direct" class="fw-bold">الجهات</label>
+              <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                <option selected> إختيار جهة </option>
+                <option value="1">القاهرة</option>
+                <option value="2">الجيزة</option>
+                <option value="3">الإسكندرية</option>
+              </select>
+              <p class="pt-3 mb-3 fw-bold">نوع العقار</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="floor">
+                <label class="form-check-label" for="floor">
+                  شقق
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="house">
+                <label class="form-check-label" for="house">
+                  منازل
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="villa">
+                <label class="form-check-label" for="villa">
+                  فلل
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="sport">
+                <label class="form-check-label" for="sport">
+                  رياض
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="trade">
+                <label class="form-check-label" for="trade">
+                  عقارات تجارية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="lands">
+                <label class="form-check-label" for="lands">
+                  أراضي
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="farms">
+                <label class="form-check-label" for="farms">
+                  مزارع
+                </label>
+              </div>
+              <p class="pt-3 mb-2 fw-bold">الثمن</p>
+              <div class="row selectForm">
+                <div class="col-md-6">
+                  <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                    <option selected> الأقصي </option>
+                    <option> 200000 </option>
+                    <option> 250000 </option>
+                    <option> 1000000 </option>
+                    <option> 3000000 </option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                    <option selected> الأدني </option>
+                    <option> 200000 </option>
+                    <option> 250000 </option>
+                    <option> 1000000 </option>
+                    <option> 3000000 </option>
+                  </select>
+                </div>
+              </div>
+              <p class="pt-3 mb-2 fw-bold">المساحة</p>
+              <div class="row selectForm">
+                <div class="col-md-6">
+                  <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                    <option selected> الأقصي </option>
+                    <option> 200000 </option>
+                    <option> 250000 </option>
+                    <option> 1000000 </option>
+                    <option> 3000000 </option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                    <option selected> الأدني </option>
+                    <option> 200000 </option>
+                    <option> 250000 </option>
+                    <option> 1000000 </option>
+                    <option> 3000000 </option>
+                  </select>
+                </div>
+              </div>
+              <p class="pt-3 mb-2 fw-bold">عدد الغرف</p>
+              <div class="row selectForm">
+                <div class="col-md-12">
+                  <select class="form-select mt-2" id="direct" dir="rtl" aria-label="Default select example">
+                    <option selected> غير مهم </option>
+                    <option> غرفه </option>
+                    <option> غرفتين </option>
+                    <option> 3 غرف </option>
+                    <option> 4 غرف </option>
+                  </select>
+                </div>
+              </div>
+              <p class="pt-3 mb-3 fw-bold"> مميزات </p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="firnutch">
+                <label class="form-check-label" for="firnutch">
+                  مفروشة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="balkon">
+                <label class="form-check-label" for="balkon">
+                  شرفة
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="swiming">
+                <label class="form-check-label" for="swiming">
+                  مسبح
+                </label>
+              </div>
+              <p class="pt-3 mb-2 fw-bold"> المزيد من الخصائص </p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="announce">
+                <label class="form-check-label" for="announce">
+                  إعلانات بها صور
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="weekly">
+                <label class="form-check-label" for="weekly">
+                  إعلانات جريدة (اخر الأسبوع)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="row">
+            <div class="col-lg-9 col-md-8">
+              <ul class="nav nav-pills mb-3 pe-0" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell"
+                    type="button" role="tab" aria-controls="pills-sell" aria-selected="true">عقارات للبيع</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-newAqar-tab" data-bs-toggle="pill" data-bs-target="#pills-newAqar"
+                    type="button" role="tab" aria-controls="pills-newAqar" aria-selected="false">عقارات جديدة</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent"
+                    type="button" role="tab" aria-controls="pills-rent" aria-selected="false">عقارات للإيجار</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-annual-tab" data-bs-toggle="pill" data-bs-target="#pills-annual"
+                    type="button" role="tab" aria-controls="pills-annual" aria-selected="false"> كراء موسمي</button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <select class="form-select mt-2 mb-3" id="direct" dir="rtl" aria-label="Default select example">
+                <option selected> تاريخ النشر </option>
+                <option value="1"> الأفضلية </option>
+                <option value="2"> تاريخ النشر </option>
+                <option value="3"> الأقل سعرا </option>
+                <option value="4"> الأعلي سعرا </option>
+              </select>
+            </div>
+          </div>
+          <!-- Nav tabs -->
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab">
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-newAqar" role="tabpanel" aria-labelledby="pills-newAqar-tab">
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+              <div class="card mb-3">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <a href="#" class="text-decoration-none">
+                          <h1 class="absoluteH"><i class="fa fa-heart"></i></h1>
+                          <p class="absolutePrice"> 420,5000 جنيه </p>
+                          <img src="images/img1.jpg" class="imgTall img-fluid" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body contentCard">
+                        <a href="#" class="text-decoration-none">
+                          <h5 class="card-title text-dark"> القاهرة </h5>
+                          <h6 class="card-text"><i class="fa fa-map-marker-alt"></i> التجمع الأول </h6>
+                          <p class="mb-1 text-dark fw-bold"><small>2 غرف , 135 م</small></p>
+                          <p class="colorD">
+                            يقع مشروع بحي لوازيس، موقع استراتيجي، بمدينة الدار البيضاء. يقدم هذا المشروع شققا عالية الجودة
+                            ذات مساحات تتراوح من 98 إلى 138 مترًا مربعًا، وذألك ابتداء من 1.911.000 درهم. يتميز هذا السكن
+                            المكون من 3 طوابق
+                          </p>
+                        </a>
+                        <ul class="list-group list-group-horizontal border-0 justify-content-start mr-0 p-0">
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-calendar-plus ps-1"></i> 10/10/2020
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3">
+                            <i class="fa fa-camera ps-1"></i> 12 صور
+                          </li>
+                          <li class="list-group-item border-0 pe-0 ps-3 w-50">
+                            <button type="button" class="btn btnCallNew px-4 " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              لإتصال
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header mx-auto border-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <i class="fa fa-user"></i> صاحب البريد الإلكتروني
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card">
+                            <div class="card-body text-center">
+                              <form action="#">
+                                <p>المرجو ترك معلوماتك ورقم هاتفك ليتم الإتصال بك</p>
+                                <input type="text" class="form-control mb-2" placeholder="إسمك" required>
+                                <input type="email" class="form-control mb-2" placeholder="يرجي إدخال بريدكم الإلكتروني"
+                                  required>
+                                <input type="tel" class="form-control mb-2" placeholder="رقم هاتفكم" required>
+                                <button class="btn btnCall px-5 mt-3" type="submit">لإتصال</button>
+                                <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات
+                                    الشخصية</small></p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <nav aria-label="Page navigation example" dir="rtl">
+        <ul class="pagination justify-content-center pe-0">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container" dir="rtl">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 pb-3">
+          <a href="#" class="d-block"><img src="images/mubawab-app.png" alt="mubawab-app" class="img-fluid"></a>
+          <a href="#"><img src="images/google-play.png" alt="google-play"></a>
+          <a href="#"><img src="images/app-store.png" alt="mubawab-app"></a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <p><a href="#" class="text-decoration-none">إنشاء إعلان مجاني</a></p>
+          <p><a href="#" class="text-decoration-none">قم بإدراج صفحة أعمالك</a></p>
+          <p><a href="#" class="text-decoration-none">مدونة</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <p><a href="#" class="text-decoration-none">في ما يخصنا</a></p>
+          <p><a href="#" class="text-decoration-none">راسلنا</a></p>
+          <p><a href="#" class="text-decoration-none">أسئلة متداولة</a></p>
+          <p><a href="#" class="text-decoration-none">البنود والشروط</a></p>
+          <p><a href="#" class="text-decoration-none">سياسة الخصوصية</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <ul class="d-flex list-unstyled socialLinks">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-blog"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-camera"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/file.js"></script>
+</body>
+
+</html>
