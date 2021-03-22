@@ -378,6 +378,39 @@ p .btnSearch{
     background-color: gainsboro;
     border-radius: .25rem;
 }
+/* ======================= Details ==================== */
+.sliderDetails img{
+    height: 440px;
+    object-fit: cover;
+}
+.sideCard .card-title{
+    background-color: #df591e;
+    color: white;
+    padding:10px 2px;
+}
+.cardAkarDetails{
+    background-color: #fbfbfb;
+}
+.cardAkarDetails .card{
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
+}
+.cardAkarDetails .card-img-top{
+    height: 180px;
+    object-fit: cover;
+}
+.lastSection{
+    background: url(../images/pattern-grey.jpg);
+    object-fit: cover;
+}
+.lastSection .media{
+    display: flex;
+}
+.lastSection .media img{
+    width: 130px;
+    border: solid 1px #d4d4d4;
+    height: 100px;
+    object-fit: cover;
+}
 /* ======================= Media Quires ================= */
 
 @media screen and ( max-width: 992px){
@@ -405,5 +438,11 @@ p .btnSearch{
     }
     .card-body .list-group-horizontal{
         flex-direction: column;
+    }
+    .lastSection .media {
+        display: block;
+    }
+    .lastSection .media img{
+        margin-bottom: 1rem;
     }
 }
