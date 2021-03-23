@@ -425,6 +425,7 @@ p .btnSearch{
 .filterHome img{
     max-height: 150px;
 }
+.filterHome .list-group-item{cursor: pointer;}
 /* ======================= Media Quires ================= */
 
 @media screen and ( max-width: 992px){
