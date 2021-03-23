@@ -49,6 +49,12 @@ body{
 .firstSection{
     overflow: hidden;
 }
+.firstSection .list-group-item:hover{
+    cursor: pointer;
+}
+.filterHome{
+    background-color: #0084bc;
+}
 .imgBg{
     width: 110%;
     margin-left: -1rem;
@@ -66,8 +72,9 @@ body{
     border-radius: 25px;
 }
 .listSelect{
-    height: 17rem;
+    min-height: 17rem;
     background-color: white;
+    max-height: 18rem;
     box-shadow: 3px 4px 6px 0px rgb(0 0 0 / 20%);
 }
 .listSelect .list-group-item{
@@ -414,6 +421,9 @@ p .btnSearch{
 .formAnnounce form{
     background-color: rgb(230, 224, 224);
     box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
+}
+.filterHome img{
+    max-height: 150px;
 }
 /* ======================= Media Quires ================= */
 
