@@ -426,6 +426,31 @@ p .btnSearch{
     max-height: 150px;
 }
 .filterHome .list-group-item{cursor: pointer;}
+
+.frame {
+    min-height: 280px;
+    max-height: 350px;      /* Equals maximum image height */
+    width: 97%;
+    /* border: 1px solid red; */
+    white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+
+    text-align: center;
+    margin: 1em 0;
+}
+.frame img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-height: 325px;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.tab-content .contentCard{
+    max-height: 320px;
+    overflow: auto;
+}
 /* ======================= Media Quires ================= */
 
 @media screen and ( max-width: 992px){
@@ -459,5 +484,9 @@ p .btnSearch{
     }
     .lastSection .media img{
         margin-bottom: 1rem;
+    }
+    .tab-content .contentCard{
+        max-height: none;
+        overflow: auto;
     }
 }
