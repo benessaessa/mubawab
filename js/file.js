@@ -14,6 +14,9 @@ $(document).ready(function(){
     $('.listNew5').hide();
     $('.listNewR2').hide();
     $('.listNewR3').hide();
+    $('.listNewA2').hide();
+    $('.listNewA3').hide();
+    $('.listNewA4').hide();
     $('.showList1').click(function(){
         $('.list2').hide();
         $('.list3').hide();
@@ -87,5 +90,29 @@ $(document).ready(function(){
         $('.listNewR3').show();
         $('.listNewR1').hide();
         $('.listNewR2').hide();
+    });
+    $('.showListNewA1').click(function(){
+        $('.listNewA1').show();
+        $('.listNewA2').hide();
+        $('.listNewA3').hide();
+        $('.listNewA4').hide();
+    });
+    $('.showListNewA2').click(function(){
+        $('.listNewA2').show();
+        $('.listNewA1').hide();
+        $('.listNewA3').hide();
+        $('.listNewA4').hide();
+    });
+    $('.showListNewA3').click(function(){
+        $('.listNewA3').show();
+        $('.listNewA1').hide();
+        $('.listNewA2').hide();
+        $('.listNewA4').hide();
+    });
+    $('.showListNewA4').click(function(){
+        $('.listNewA4').show();
+        $('.listNewA1').hide();
+        $('.listNewA2').hide();
+        $('.listNewA3').hide();
     });
 });
