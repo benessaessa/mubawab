@@ -78,7 +78,7 @@ body{
     box-shadow: 3px 4px 6px 0px rgb(0 0 0 / 20%);
 }
 .listSelect .list-group{
-    height: 14rem;
+    height: 10rem;
     overflow: auto;
 }
 .listSelect .list-group-item{
