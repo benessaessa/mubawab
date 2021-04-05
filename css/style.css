@@ -386,8 +386,8 @@ p .btnSearch{
     border-radius: .25rem;
 }
 /* ======================= Details ==================== */
-.sliderDetails img{
-    height: 440px;
+.newEditSlider img{
+    height: 240px;
     object-fit: cover;
 }
 .sideCard .card-title{
