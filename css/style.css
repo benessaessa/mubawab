@@ -72,10 +72,14 @@ body{
     border-radius: 25px;
 }
 .listSelect{
-    min-height: 17rem;
     background-color: white;
-    max-height: 18rem;
+    height: 18rem;
+    overflow: auto;
     box-shadow: 3px 4px 6px 0px rgb(0 0 0 / 20%);
+}
+.listSelect .list-group{
+    height: 14rem;
+    overflow: auto;
 }
 .listSelect .list-group-item{
     border: none;
