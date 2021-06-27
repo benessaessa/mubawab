@@ -1,0 +1,30 @@
+@font-face{
+    src: url(../webfonts/Cairo-Regular.ttf);
+    font-family: cairo
+}
+body{
+    font-family: Cairo;
+}
+.bgImage {
+    background: url('../logos/network-bg.jpg') repeat;
+    object-fit: cover;
+}
+.btnNetwork{
+    font-size: 22px;
+    color: rgb(95, 79, 79);
+}
+.imgAbsolute{
+    margin-left: -75px;
+    mix-blend-mode: darken;
+    margin-top: -44px;
+    width:60px;
+    height:60px;
+}
+.imgAbsoluteAqar{
+    margin-left: -119px;
+    mix-blend-mode: darken;
+    margin-top: -68px;
+}
+.bgImage a{
+    text-decoration: none;
+}
